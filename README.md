@@ -7,7 +7,8 @@ The application uses registering of a custom URI-protocol on Windows to get redi
 
 To run the test:
 1. Compile solution.
-2. Start the application.
-3. Install custom URI-protocol by pressing the topmost button (requires admin rights).
-4. Try to navigate to eveauth-sso-test://auth/?kjlkj=0980809 (In my case Chromium based browsers don't work. FireFox and IE work). In GUI should be shown a message box with URI navigated in browser.
-5. WIP...
+2. Start the application as an admin.
+3. Install custom URI-protocol by pressing the topmost button.
+4. Close application and restart it as normal (without run as admin).
+5. Try to navigate to eveauth-sso-test://auth/?kjlkj=0980809 (In my case Chromium based browsers don't work. FireFox and IE work). In GUI should be shown a message box with URI navigated in browser.
+6. WIP...
