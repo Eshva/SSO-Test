@@ -9,4 +9,5 @@ To run the test:
 1. Compile solution.
 2. Start the application.
 3. Install custom URI-protocol by pressing the topmost button (requires admin rights).
-4. WIP
+4. Try to navigate to eveauth-sso-test://auth/?kjlkj=0980809 (In my case Chromium based browsers don't work. FireFox and IE work). In GUI should be shown a message box with URI navigated in browser.
+5. WIP...
