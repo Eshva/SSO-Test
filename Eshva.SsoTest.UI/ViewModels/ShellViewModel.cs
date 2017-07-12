@@ -29,7 +29,7 @@ namespace Eshva.SsoTest.UI.ViewModels
             MessageBox.Show(uri, "URI recieved");
         }
 
-        private void InstallCustomUriScheme()
+        public void InstallCustomUriScheme()
         {
             var installer = new CustomUriSchemeInstaller();
             var applicationPath = Assembly.GetExecutingAssembly().Location;
