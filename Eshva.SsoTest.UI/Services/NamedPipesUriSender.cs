@@ -6,7 +6,7 @@ using System.IO.Pipes;
 #endregion
 
 
-namespace Eshva.SsoTest.UI
+namespace Eshva.SsoTest.UI.Services
 {
     internal sealed class NamedPipesUriSender
     {

@@ -1,4 +1,4 @@
-﻿namespace Eshva.SsoTest.UI
+﻿namespace Eshva.SsoTest.UI.Services
 {
 	internal class SsoAuthenticationProvider
 	{

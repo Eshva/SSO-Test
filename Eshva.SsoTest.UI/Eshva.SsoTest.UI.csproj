@@ -78,14 +78,18 @@
     </ApplicationDefinition>
     <Compile Include="AppBootstrapper.cs" />
     <Compile Include="Constants.cs" />
-    <Compile Include="IUriReceiver.cs" />
+    <Compile Include="Services\IUriReceiver.cs" />
+    <Compile Include="Services\ICustomUriSchemeInstaller.cs" />
+    <Compile Include="Services\IUserNotifier.cs" />
+    <Compile Include="Services\ManualRegistryFileBasedUriSchemeInstaller.cs" />
+    <Compile Include="Services\MessageBoxUserNotifier.cs" />
     <Compile Include="Views\ShellView.xaml.cs">
       <DependentUpon>ShellView.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\ShellViewModel.cs" />
-    <Compile Include="NamedPipesUriSender.cs" />
-    <Compile Include="NamedPipesUriReceiver.cs" />
-    <Compile Include="SsoAuthenticationProvider.cs" />
+    <Compile Include="Services\NamedPipesUriSender.cs" />
+    <Compile Include="Services\NamedPipesUriReceiver.cs" />
+    <Compile Include="Services\SsoAuthenticationProvider.cs" />
     <Page Include="Views\ShellView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -94,7 +98,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="CustomUriSchemeInstaller.cs" />
+    <Compile Include="Services\RegistryOperatingUriSchemeInstaller.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

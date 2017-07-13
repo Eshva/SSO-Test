@@ -6,11 +6,11 @@ using Microsoft.Win32;
 #endregion
 
 
-namespace Eshva.SsoTest.UI
+namespace Eshva.SsoTest.UI.Services
 {
-	internal class CustomUriSchemeInstaller
+	internal sealed class RegistryOperatingUriSchemeInstaller : ICustomUriSchemeInstaller
 	{
-		public void registerUriScheme(
+		public void InstallUriScheme(
 			string protocol,
 			string displayName,
 			string applicationPath,

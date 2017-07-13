@@ -5,7 +5,7 @@ using System;
 #endregion
 
 
-namespace Eshva.SsoTest.UI
+namespace Eshva.SsoTest.UI.Services
 {
     public interface IUriReceiver
     {
