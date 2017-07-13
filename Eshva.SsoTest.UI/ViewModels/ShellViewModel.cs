@@ -30,7 +30,7 @@ namespace Eshva.SsoTest.UI.ViewModels
 			_uriSchemeInstaller = uriSchemeInstaller;
 			_authenticationService = authenticationService;
 
-			Log("HOW TO US");
+			Log("HOW TO USE");
 			Log("For the first time press the topmost button to register a custom URI-scheme.");
 			Log("This will produce a .reg file in the temp-folder which will be imported");
 			Log("into your registry. It's safe. You can check the contents of this file afterwards.");

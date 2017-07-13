@@ -38,7 +38,15 @@ namespace Eshva.SsoTest.UI
 			{
 				if (!eventArgs.Args.Any())
 				{
-					DisplayRootViewFor<ShellViewModel>();
+					var windowSettings = new Dictionary<string, object>
+										{
+											{ "SizeToContent", SizeToContent.Manual },
+											{ "Width", 800 },
+											{ "MinWidth", 800 },
+											{ "Height", 400 },
+											{ "MinHeight", 400 }
+										};
+					DisplayRootViewFor<ShellViewModel>(windowSettings);
 				}
 				else
 				{
