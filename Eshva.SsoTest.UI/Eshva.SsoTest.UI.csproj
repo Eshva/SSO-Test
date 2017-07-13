@@ -52,8 +52,12 @@
     <Reference Include="Caliburn.Micro.Platform.Core, Version=3.0.3.0, Culture=neutral, PublicKeyToken=8e5891231f2ed21f, processorArchitecture=MSIL">
       <HintPath>..\packages\Caliburn.Micro.3.1.0\lib\net45\Caliburn.Micro.Platform.Core.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Caliburn.Micro.3.1.0\lib\net45\System.Windows.Interactivity.dll</HintPath>
       <Private>True</Private>
@@ -78,18 +82,18 @@
     </ApplicationDefinition>
     <Compile Include="AppBootstrapper.cs" />
     <Compile Include="Constants.cs" />
+    <Compile Include="Services\ISsoAuthenticationService.cs" />
     <Compile Include="Services\IUriReceiver.cs" />
     <Compile Include="Services\ICustomUriSchemeInstaller.cs" />
-    <Compile Include="Services\IUserNotifier.cs" />
     <Compile Include="Services\ManualRegistryFileBasedUriSchemeInstaller.cs" />
-    <Compile Include="Services\MessageBoxUserNotifier.cs" />
+    <Compile Include="Services\TokensResponse.cs" />
     <Compile Include="Views\ShellView.xaml.cs">
       <DependentUpon>ShellView.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\ShellViewModel.cs" />
     <Compile Include="Services\NamedPipesUriSender.cs" />
     <Compile Include="Services\NamedPipesUriReceiver.cs" />
-    <Compile Include="Services\SsoAuthenticationProvider.cs" />
+    <Compile Include="Services\SsoAuthenticationService.cs" />
     <Page Include="Views\ShellView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -98,7 +102,6 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Services\RegistryOperatingUriSchemeInstaller.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

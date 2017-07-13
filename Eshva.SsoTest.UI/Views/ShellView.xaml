@@ -2,12 +2,13 @@
     x:Class="Eshva.SsoTest.UI.Views.ShellView"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    Width="800"
-    Height="350"
-    mc:Ignorable="d">
-    <Grid Margin="10">
+    MinWidth="800"
+    MinHeight="350"
+	HorizontalAlignment="Stretch"
+	HorizontalContentAlignment="Stretch"
+	VerticalAlignment="Stretch"
+	VerticalContentAlignment="Stretch">
+    <Grid Margin="10" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
         <Grid.Resources>
             <Style TargetType="Button">
                 <Setter Property="Height" Value="60" />
@@ -31,7 +32,7 @@
             <Button x:Name="InstallCustomUriScheme">Install custom URI scheme(requires elevation)</Button>
             <Button x:Name="LoginUsingSsoWithClientSecret">Login using SSO (with secret)</Button>
             <Button x:Name="LoginUsingSsoWithoutClientSecret">Login using SSO (with NO secret)</Button>
-            <Button>Get standings</Button>
+            <Button IsEnabled="False">Get standings (not implementet yet)</Button>
         </StackPanel>
         <TextBox
             x:Name="Output"

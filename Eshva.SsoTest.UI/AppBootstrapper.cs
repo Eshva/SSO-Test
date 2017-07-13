@@ -51,7 +51,7 @@ namespace Eshva.SsoTest.UI
 		{
 			builder.RegisterType<NamedPipesUriReceiver>().As<IUriReceiver>();
 			builder.RegisterType<ManualRegistryFileBasedUriSchemeInstaller>().As<ICustomUriSchemeInstaller>();
-			builder.RegisterType<MessageBoxUserNotifier>().As<IUserNotifier>();
+			builder.RegisterType<SsoAuthenticationService>().As<ISsoAuthenticationService>();
 		}
 
 		private static bool DoesApplicationUiInstanceStarted()
