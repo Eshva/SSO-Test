@@ -28,7 +28,7 @@
             <Button x:Name="InstallCustomUriScheme">Install custom URI scheme(requires elevation)</Button>
             <Button x:Name="LoginUsingSsoWithClientSecret">Login using SSO (with secret)</Button>
             <Button x:Name="LoginUsingSsoWithoutClientSecret">Login using SSO (with NO secret)</Button>
-            <Button IsEnabled="False">Get standings (not implementet yet)</Button>
+            <Button x:Name="GetStandingsForCharacter">Get standings (not implementet yet)</Button>
         </StackPanel>
         <TextBox
             x:Name="Output"

@@ -37,7 +37,7 @@ namespace Eshva.SsoTest.UI.ViewModels
 			Log("If you want to check it beforehand look at the source code at:");
 			Log("https://github.com/Eshva/SSO-Test");
 			Log("");
-			Log("After that you can check the next to buttons to authenticate WITH and WITHOUT");
+			Log("After that you can check the next two buttons to authenticate WITH and WITHOUT");
 			Log("the client secret key by pressing the second and the third buttons.");
 			Log("");
 			Log("The button #4 is to check API call of your character standings. (not implemented yet)");
@@ -86,6 +86,11 @@ namespace Eshva.SsoTest.UI.ViewModels
 			Log("");
 			Log("Open authentication page in default browser...");
 			_authenticationService.AuthenticateWithClientSecret(doUseApplicationSecretKey : false);
+		}
+
+		public void GetStandingsForCharacter()
+		{
+			
 		}
 
 		private void HandleUri(string uri)
